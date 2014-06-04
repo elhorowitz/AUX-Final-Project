@@ -162,6 +162,10 @@ section {
   padding: 20px;
 }
 
+.content-header {
+  height: 100%;
+}
+
 .content-header h1,
 .content-header h3,
 .content-header .form {
