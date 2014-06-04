@@ -16,8 +16,9 @@
 </head>
 <body>
   <header class="top-header">
-    <a href=""><img src="" alt="city of boston seal" /></a>
     <a href="" class="getapp">Download the Citizen's Connect App!</a>
+    <a href="" class="boston_seal"><img src="images/Boston_city_seal.png" alt="city of boston seal" /></a>
+    
   </header>
   <section class="maincontent">
     <header class="content-header home">
@@ -37,8 +38,8 @@
     </header>
     <nav class="main-nav">
       <ul class="row">
-        <li class="span-one-of-five">Home</li>
-        <li class="span-one-of-five">Services & Information</li>
+        <li class="span-one-of-five"><a href="">Home</a></li>
+        <li class="span-one-of-five"><a href="">Services & Information</a></li>
       </ul>
     </nav>
   </section>
@@ -49,7 +50,7 @@
         <li id="pay" class="action-item selected">Make a Payment</li>
         <li id="report" class="action-item">Report an Issue</li>
         <li id="request" class="action-item">Request a City Service</li>
-        <li id="track" class="action-item">Track a Previous Report or Request</li>
+        <li id="track" class="action-item">Track a Report / Request</li>
       </ul>
       <div class="action-content-wrapper col span-four-of-five" aria-live="polite">
         <div id="pay-content" class="action-content shown">
@@ -91,11 +92,14 @@
           <h3 class="action-header">Track a Previous Request or Report</h3>
           <p>Text and instructions about tracking previous requests and reports. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <form class="form">
-            <label for="conf-num">Enter the confirmation #:</label>
-            <input id="conf-num" name="conf-num" type="text" placeholder="ex. 555">
-            
-            <label for="email">Enter the email address used to submit your request:</label>
-            <input id="email" name="email" type="email" placeholder="ex. user@test.com">
+            <div class="input-wrapper">
+              <label for="conf-num">Enter the confirmation #:</label>
+              <input id="conf-num" name="conf-num" type="text" placeholder="ex. 555">
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Enter the email address used to submit your request:</label>
+              <input id="email" name="email" type="email" placeholder="ex. user@test.com">
+            </div>
 
             <input type="submit" value="submit">
           </form>
@@ -190,10 +194,10 @@
     </div>
   </section>
   <footer class="footer">
-    <a href="" class="bostonseal"><img src="" alt="city of boston seal" /></a>
-    <a href="">Go to City of Boston's Main Page</a>
+    <a href="http://www.cityofboston.gov/">Go to the City of Boston Main Page</a>
     <p>Mayor's 24 Hour Hotline: 617.555.555</p>
   </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
