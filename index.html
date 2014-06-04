@@ -11,86 +11,95 @@
   
   <title>Welcome to Citizen's Connect</title>
   
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
   <header class="top-header">
     <a href=""><img src="" alt="city of boston seal" /></a>
-    <a href="">Download the Citizen's Connect App!</a>
+    <a href="" class="getapp">Download the Citizen's Connect App!</a>
   </header>
   <section class="maincontent">
     <header class="content-header home">
-      <h1>Welcome to Citizen's Connect</h1>
-      <h2>Info about boston</h2>
-      <form class="form">
-        <label for="search_site">I am looking for: </label>
-        <input id="search_site" name="searchterm" type="search">
-        <input type="submit" value="go">
-      </form>
+      <div class="header-wrapper">
+        <h1>Welcome to Citizen's Connect</h1>
+      </div>
+      <div class="header-wrapper">
+        <h3>Info about boston. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+      </div>
+      <div class="header-wrapper">
+        <form class="form">
+          <label for="search_site">I am looking for: </label>
+          <input id="search_site" name="searchterm" type="search">
+          <input type="submit" value="go">
+        </form>
+      </div>
     </header>
     <nav class="main-nav">
-      <ul>
-        <li>Home</li>
-        <li>Services & Information</li>
+      <ul class="row">
+        <li class="span-one-of-five">Home</li>
+        <li class="span-one-of-five">Services & Information</li>
       </ul>
     </nav>
   </section>
   <section class="top-actions">
     <h2>Top Actions</h2>
-    <ul>
-      <li id="pay" class="action-item selected">Make a Payment</li>
-      <li id="report" class="action-item selected">Report an Issue</li>
-      <li id="request" class="action-item selected">Request a City Service</li>
-      <li id="track" class="action-item selected">Track a Previous Report or Request</li>
-    </ul>
-    <div class="action-content" aria-live="polite">
-      <div id="pay-content">
-        <h3 class="action-header">Make a Payment</h3>
-        <p>IText and instructions about making a payment. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <ul class="actions-wrapper row">
-          <li><a href="" class="half">Pay a parking ticket</a></li>
-          <li><a href="" class="half">Pay personal property tax</a></li>
-          <li><a href="" class="half">Pay water & sewer bill</a></li>
-          <li><a href="" class="half">Pay a motor vehicle excise tax</a></li>
-          <li><a href="" class="half">Pay a boat excise tax</a></li>
-          <li><a href="" class="half">Pay real estate tax</a></li>
-        </ul>
-      </div>
-      <div id="report-content">
-        <h3 class="action-header">Report an Issue</h3>
-        <p>Text and instructions about filing a report. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <ul class="actions-wrapper row">
-          <li><a href="" class="half">Damaged traffic light</a></li>
-          <li><a href="" class="half">Missed trash or recycling pick-up</a></li>
-          <li><a href="" class="half">Illegal Dumping</a></li>
-          <li><a href="" class="half">Broken Streetlamp, pothole, or cracked sidewalk</a></li>
-          <li><a href="" class="half">Building structure issue</a></li>
-          <li><a href="" class="half">Utilities are not working</a></li>
-          <li><a href="" class="half">Graffiti</a></li>
-        </ul>
-      </div>
-      <div id="request-content">
-        <h3 class="action-header">Request a City Service</h3>
-        <p>Text and instructions about requesting a city service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <ul class="actions-wrapper row">
-          <li><a href="" class="half">Moving day street permit</a></li>
-          <li><a href="" class="half">Tree maintanence Request</a></li>
-          <li><a href="" class="half">Large or bulk item removal</a></li>
-          <li><a href="" class="half">Request a recycling container</a></li>
-        </ul>
-      </div>
-      <div id="track-content">
-        <h3 class="action-header">Track a Previous Request or Report</h3>
-        <p>Text and instructions about tracking previous requests and reports. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <form class="form">
-          <label for="conf-num">Enter the confirmation #:</label>
-          <input id="conf-num" name="conf-num" type="text" placeholder="ex. 555">
-          
-          <label for="email">Enter the email address used to submit your request:</label>
-          <input id="email" name="email" type="email" placeholder="ex. user@test.com">
+    <div class="row">
+      <ul class="action-nav col span-one-of-five">
+        <li id="pay" class="action-item selected">Make a Payment</li>
+        <li id="report" class="action-item">Report an Issue</li>
+        <li id="request" class="action-item">Request a City Service</li>
+        <li id="track" class="action-item">Track a Previous Report or Request</li>
+      </ul>
+      <div class="action-content-wrapper col span-four-of-five" aria-live="polite">
+        <div id="pay-content" class="action-content shown">
+          <h3 class="action-header">Make a Payment</h3>
+          <p>Text and instructions about making a payment. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <ul class="actions-wrapper row">
+            <li class="half"><a href="">Pay a parking ticket</a></li>
+            <li class="half"><a href="">Pay personal property tax</a></li>
+            <li class="half"><a href="">Pay water & sewer bill</a></li>
+            <li class="half"><a href="">Pay a motor vehicle excise tax</a></li>
+            <li class="half"><a href="">Pay a boat excise tax</a></li>
+            <li class="half"><a href="">Pay real estate tax</a></li>
+          </ul>
+        </div>
+        <div id="report-content" class="action-content">
+          <h3 class="action-header">Report an Issue</h3>
+          <p>Text and instructions about filing a report. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <ul class="actions-wrapper row">
+            <li class="half"><a href="">Damaged traffic light</a></li>
+            <li class="half"><a href="">Missed trash or recycling pick-up</a></li>
+            <li class="half"><a href="">Illegal Dumping</a></li>
+            <li class="half"><a href="">Broken Streetlamp, pothole, or cracked sidewalk</a></li>
+            <li class="half"><a href="">Building structure issue</a></li>
+            <li class="half"><a href="">Utilities are not working</a></li>
+            <li class="half"><a href="">Graffiti</a></li>
+          </ul>
+        </div>
+        <div id="request-content" class="action-content">
+          <h3 class="action-header">Request a City Service</h3>
+          <p>Text and instructions about requesting a city service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <ul class="actions-wrapper row">
+            <li class="half"><a href="">Moving day street permit</a></li>
+            <li class="half"><a href="">Tree maintanence Request</a></li>
+            <li class="half"><a href="">Large or bulk item removal</a></li>
+            <li class="half"><a href="">Request a recycling container</a></li>
+          </ul>
+        </div>
+        <div id="track-content" class="action-content">
+          <h3 class="action-header">Track a Previous Request or Report</h3>
+          <p>Text and instructions about tracking previous requests and reports. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <form class="form">
+            <label for="conf-num">Enter the confirmation #:</label>
+            <input id="conf-num" name="conf-num" type="text" placeholder="ex. 555">
+            
+            <label for="email">Enter the email address used to submit your request:</label>
+            <input id="email" name="email" type="email" placeholder="ex. user@test.com">
 
-          <input type="submit" value="submit">
-        </form>
+            <input type="submit" value="submit">
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -102,88 +111,88 @@
   </section>
   <section class="services-info">
     <h2>Services and Information</h2>
-    <div class="col span-one-of-five">
-      <span class="trans-str-prk-icon"></span>
-      <h3>Transportation, Parking & Streets</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="reg-lcs-pmt-icon"></span>
-      <h3>Business Registration, Licensing & Permits</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="jobs-icon"></span>
-      <h3>Jobs & Volunteering</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="tax-icon"></span>
-      <h3>Tax Information</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="asst-icon"></span>
-      <h3>Government Benefits & Assistance</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-
-    <div class="col span-one-of-five">
-      <span class="health-icon"></span>
-      <h3>Health & Safety</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="trash-icon"></span>
-      <h3>Garbage, Recycling & Graffiti</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="property-icon"></span>
-      <h3>Housing, Property & Construction</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="records-icon"></span>
-      <h3>Personal Records</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="vot-elec-cens-icon"></span>
-      <h3>Voting, Elections & Census</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-
-    <div class="col span-one-of-five">
-      <span class="city-dev-icon"></span>
-      <h3>City & Neighborhood Development</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="edu-icon"></span>
-      <h3>Education, Schools & Scholarship</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="pet-icon"></span>
-      <h3>Pet Ownership</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="parks-icon"></span>
-      <h3>Parks & Environment</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-    <div class="col span-one-of-five">
-      <span class="arts-icon"></span>
-      <h3>Arts & Entertainment</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    <div class="row">
+      <div class="col span-one-of-five">
+        <span class="trans-str-prk-icon"></span>
+        <h3>Transportation, Parking & Streets</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="reg-lcs-pmt-icon"></span>
+        <h3>Business Registration, Licensing & Permits</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="jobs-icon"></span>
+        <h3>Jobs & Volunteering</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="tax-icon"></span>
+        <h3>Tax Information</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="asst-icon"></span>
+        <h3>Government Benefits & Assistance</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="health-icon"></span>
+        <h3>Health & Safety</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="trash-icon"></span>
+        <h3>Garbage, Recycling & Graffiti</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="property-icon"></span>
+        <h3>Housing, Property & Construction</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="records-icon"></span>
+        <h3>Personal Records</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="vot-elec-cens-icon"></span>
+        <h3>Voting, Elections & Census</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="city-dev-icon"></span>
+        <h3>City & Neighborhood Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="edu-icon"></span>
+        <h3>Education, Schools & Scholarship</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="pet-icon"></span>
+        <h3>Pet Ownership</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="parks-icon"></span>
+        <h3>Parks & Environment</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="col span-one-of-five">
+        <span class="arts-icon"></span>
+        <h3>Arts & Entertainment</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
     </div>
   </section>
   <footer class="footer">
+    <a href="" class="bostonseal"><img src="" alt="city of boston seal" /></a>
     <a href="">Go to City of Boston's Main Page</a>
     <p>Mayor's 24 Hour Hotline: 617.555.555</p>
-    <a href=""><img src="" alt="city of boston seal" /></a>
   </footer>
   <script src="js/script.js"></script>
 </body>
