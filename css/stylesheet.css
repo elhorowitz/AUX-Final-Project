@@ -279,20 +279,28 @@ li {
   border-bottom: 1px solid #000;
 }
 
-.top-actions {
-  background: #FFFFFF;
+.section {
   display: block;
-  margin: auto;
-  max-width: 1000px;
   padding: 10px 25px;
-  position: relative;
 }
 
-.top-actions h2 {
+.section h2 {
   color: #0C3F76;
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.section-wrapper {
+  margin: 20px auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+
+/*---- Top Actions ----*/
+.top-actions {
+  background: #FFFFFF;
 }
 
 .action-nav {
@@ -404,13 +412,10 @@ li {
   display: block;
 }
 
-.social-media {
-  background: yellowgreen;
-  min-height: 150px;
-}
 
+/*---- Services and Info ----*/
 .services-info {
-  background: yellowgreen;
+  background: #5A91C2;
 }
 
 .services-info a {
@@ -422,22 +427,45 @@ li {
 }
 
 .services-info figure {
-  height: 200px;
+  background: #fff;
+  position: relative;
 }
 
 .services-info img {
-  height: 50%;
   width: 100%;
 }
 
 .services-info figcaption {
-  height: 50%;
+  height: 60px;
   overflow: hidden;
+  padding: 0 5px;
   width: 100%;
 }
 
-.services-info p,
-.services-info h3 { margin: 0;}
+.services-info p { 
+  font-size: 14px;
+}
+
+.services-info h3 { 
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff;
+  text-transform: uppercase;
+}
+
+
+
+/*---- Social Media ----*/
+.social-media {
+  background: yellowgreen;
+  min-height: 150px;
+}
+
+
 
 .footer p {
   margin-top: 0;
