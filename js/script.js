@@ -22,5 +22,14 @@
     }
   });
 
+  //====================================
+  //Function to show report form
+  var showForm = function (el) { 
+    $(".report").removeClass("hidden");
+  };
 
+  $("button.show-report").on("click", function(e) {
+    e.preventDefault();
+    showForm($(this));
+  });
 })();
