@@ -1,0 +1,90 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en" lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en" lt-ie10 lt-ie9"><![endif]-->
+<!--[if (IE 9)&!(IEMobile)]><html lang="en" lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Welcome to Citizen's Connect</title>
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <section class="main-content">
+    <header class="content-header transportation">
+      <div class="top-header">
+        <a href="" class="getapp">Download the Citizen's Connect App!</a>
+        <a href="" class="boston_seal"><img src="images/Boston_city_seal.png" alt="city of boston seal" /></a>
+      </div>
+  
+      <div class="header-wrapper">
+        <h1>Transportation Streets & Parking</h1>
+      </div>
+      <div class="header-wrapper">
+        <form class="form">
+          <label for="search_site">I am looking for: </label>
+          <input id="search_site" name="searchterm" type="search">
+          <input type="submit" value="go">
+        </form>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <ul class="row">
+        <li class="span-one-of-five"><a href="">Home</a></li>
+        <li class="span-one-of-five"><a href="">Services & Information</a></li>
+      </ul>
+    </nav>
+    <form class="form">
+      <h2>Pay a Parking Ticket</h2>
+      <p>Text and instructions about making a payment. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="input-wrapper">
+        <label class="form-label" for="ticket-num">Please enter your ticket or violation number #:</label>
+        <input id="ticket-num" name="ticket-num" type="text" placeholder="ex. 555">
+      </div>
+      <h2>OR</h2>
+      <div class="input-wrapper">
+        <label class="form-label" for="notice-num">Please enter your notice number:</label>
+        <input id="notice-num" name="notice-num" type="text" placeholder="ex. 555">
+      </div>
+      <p>If you don’t have either number above, search your ticket information using your LICENSE PLATE or NUMBER.</p>
+      <div class="input-wrapper">
+        <label class="form-label" for="license-plate">Massachusetts license plate number:</label>
+        <input id="license-plate" name="license-plate" type="text" placeholder="ex. 555">
+      </div>
+      <fieldset>
+        <legend class="form-label">Type of License</legend>
+        <div class="row">
+          <input id="passenger" name="radio" type="radio" value="passenger" aria-required="true" required>
+          <label for="passenger">Passenger</label>
+        </div>
+        <div class="row">
+          <input id="commercial" name="radio" type="radio" value="commercial">
+          <label for="commercial">Commercial</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="form-label">Month and Year of Birth</legend>
+        <div class="input-wrapper">
+          <label class="hidden" for="DOB-month" aria-hidden="true">Month</label>
+          <input id="DOB-month" name="DOB-month" type="text" placeholder="MM">
+
+          <label class="hidden" for="DOB-year" aria-hidden="true">Year</label>
+          <input id="DOB-year" name="DOB-year" type="text" placeholder="YYYY">
+        </div>
+      </fieldset>
+      <input type="submit" value="submit">
+    </form>
+    <footer class="footer">
+      <a href="http://www.cityofboston.gov/">Go to the City of Boston Main Page</a>
+      <p>Mayor's 24 Hour Hotline: 617.555.555</p>
+    </footer>
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -17,7 +17,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   margin: auto;
-  max-width: 990px;
+  max-width: 960px;
   position: relative;
   width: 80%;
 }
@@ -25,6 +25,18 @@ body {
 img {
   height: 100%;
   width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  left: -9999px;
+  opacity: 0;
+  position: absolute;
+  top: -9999px;
 }
 
 
@@ -123,6 +135,10 @@ section {
 
 
 /*---------- Form Elements ----------*/
+.form fieldset {
+  border: none;
+}
+
 .form input {
 
 }
@@ -151,6 +167,10 @@ section {
 }
 
 .getapp { float: right; }
+
+.head-content {
+  height: 100%;
+}
 
 .main-nav {
   border-bottom: 1px solid #000;
@@ -254,9 +274,31 @@ section {
   background: yellowgreen;
 }
 
-.services-info .col {
+.services-info a {
+  color: #000;
+}
+
+.services-info a:hover {
+  text-decoration: none;
+}
+
+.services-info figure {
   height: 200px;
 }
+
+.services-info img {
+  height: 50%;
+  width: 100%;
+}
+
+.services-info figcaption {
+  height: 50%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.services-info p,
+.services-info h3 { margin: 0;}
 
 .footer p {
   margin-top: 0;

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-  <section class="maincontent">
+  <section class="head-content">
     <header class="content-header home">
       <div class="top-header">
         <a href="" class="getapp">Download the Citizen's Connect App!</a>
@@ -36,13 +36,13 @@
         </form>
       </div>
     </header>
-    <nav class="main-nav">
-      <ul class="row">
-        <li class="span-one-of-five"><a href="">Home</a></li>
-        <li class="span-one-of-five"><a href="">Services & Information</a></li>
-      </ul>
-    </nav>
   </section>
+  <nav class="main-nav">
+    <ul class="row">
+      <li class="span-one-of-five"><a href="">Home</a></li>
+      <li class="span-one-of-five"><a href="">Services & Information</a></li>
+    </ul>
+  </nav>
   <section class="top-actions">
     <h2>Top Actions</h2>
     <div class="row">
@@ -57,47 +57,47 @@
           <h3 class="action-header">Make a Payment</h3>
           <p>Text and instructions about making a payment. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <ul class="actions-wrapper row">
-            <li class="half"><a href="">Pay a parking ticket</a></li>
-            <li class="half"><a href="">Pay personal property tax</a></li>
-            <li class="half"><a href="">Pay water & sewer bill</a></li>
-            <li class="half"><a href="">Pay a motor vehicle excise tax</a></li>
-            <li class="half"><a href="">Pay a boat excise tax</a></li>
-            <li class="half"><a href="">Pay real estate tax</a></li>
+            <li class="half"><a href="pay-form.html">Pay a parking ticket</a></li>
+            <li class="half"><a href="pay-form.html">Pay personal property tax</a></li>
+            <li class="half"><a href="pay-form.html">Pay water & sewer bill</a></li>
+            <li class="half"><a href="pay-form.html">Pay a motor vehicle excise tax</a></li>
+            <li class="half"><a href="pay-form.html">Pay a boat excise tax</a></li>
+            <li class="half"><a href="pay-form.html">Pay real estate tax</a></li>
           </ul>
         </div>
         <div id="report-content" class="action-content">
           <h3 class="action-header">Report an Issue</h3>
           <p>Text and instructions about filing a report. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <ul class="actions-wrapper row">
-            <li class="half"><a href="">Damaged traffic light</a></li>
-            <li class="half"><a href="">Missed trash or recycling pick-up</a></li>
-            <li class="half"><a href="">Illegal Dumping</a></li>
-            <li class="half"><a href="">Broken Streetlamp, pothole, or cracked sidewalk</a></li>
-            <li class="half"><a href="">Building structure issue</a></li>
-            <li class="half"><a href="">Utilities are not working</a></li>
-            <li class="half"><a href="">Graffiti</a></li>
+            <li class="half"><a href="report-form.html">Damaged traffic light</a></li>
+            <li class="half"><a href="report-form.html">Missed trash or recycling pick-up</a></li>
+            <li class="half"><a href="report-form.html">Illegal Dumping</a></li>
+            <li class="half"><a href="report-form.html">Broken Streetlamp, pothole, or cracked sidewalk</a></li>
+            <li class="half"><a href="report-form.html">Building structure issue</a></li>
+            <li class="half"><a href="report-form.html">Utilities are not working</a></li>
+            <li class="half"><a href="report-form.html">Graffiti</a></li>
           </ul>
         </div>
         <div id="request-content" class="action-content">
           <h3 class="action-header">Request a City Service</h3>
           <p>Text and instructions about requesting a city service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <ul class="actions-wrapper row">
-            <li class="half"><a href="">Moving day street permit</a></li>
-            <li class="half"><a href="">Tree maintanence Request</a></li>
-            <li class="half"><a href="">Large or bulk item removal</a></li>
-            <li class="half"><a href="">Request a recycling container</a></li>
+            <li class="half"><a href="request-form.html">Moving day street permit</a></li>
+            <li class="half"><a href="request-form.html">Tree maintanence Request</a></li>
+            <li class="half"><a href="request-form.html">Large or bulk item removal</a></li>
+            <li class="half"><a href="request-form.html">Request a recycling container</a></li>
           </ul>
         </div>
         <div id="track-content" class="action-content">
           <h3 class="action-header">Track a Previous Request or Report</h3>
           <p>Text and instructions about tracking previous requests and reports. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <form class="form">
+          <form class="form" action="track-page.html" method="get">
             <div class="input-wrapper">
-              <label for="conf-num">Enter the confirmation #:</label>
+              <label class="form-label" for="conf-num">Enter the confirmation #:</label>
               <input id="conf-num" name="conf-num" type="text" placeholder="ex. 555">
             </div>
             <div class="input-wrapper">
-              <label for="email">Enter the email address used to submit your request:</label>
+              <label class="form-label" for="email">Enter the email address used to submit your request:</label>
               <input id="email" name="email" type="email" placeholder="ex. user@test.com">
             </div>
 
@@ -112,79 +112,169 @@
     <h2>Services and Information</h2>
     <div class="row">
       <div class="col span-one-of-five">
-        <span class="trans-str-prk-icon"></span>
-        <h3>Transportation, Parking & Streets</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="transportation" class="trans-str-prk"></img>
+            <figcaption>
+              <h3>Transportation, Parking & Streets</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="reg-lcs-pmt-icon"></span>
-        <h3>Business Registration, Licensing & Permits</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="registration" class="reg-lcs-pmt"></img>
+            <figcaption>
+              <h3>Business Registration, Licensing & Permits</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="jobs-icon"></span>
-        <h3>Jobs & Volunteering</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="jobs" class="jobs"></img>
+            <figcaption>
+              <h3>Jobs & Volunteering</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="tax-icon"></span>
-        <h3>Tax Information</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="garbage-recycling-graffiti.html">
+          <figure>
+            <img src="" alt="taxes" class="tax"></img>
+            <figcaption>
+              <h3>Tax Information</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="asst-icon"></span>
-        <h3>Government Benefits & Assistance</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="government assistance" class="asst"></img>
+            <figcaption>
+              <h3>Government Benefits & Assistance</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="health-icon"></span>
-        <h3>Health & Safety</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="health" class="health"></img>
+            <figcaption>
+              <h3>Health & Safety</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="trash-icon"></span>
-        <h3>Garbage, Recycling & Graffiti</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="garbage-recycling-graffiti.html">
+          <figure>
+            <img src="" alt="garbage" class="trash"></img>
+            <figcaption>
+              <h3>Garbage, Recycling & Graffiti</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="property-icon"></span>
-        <h3>Housing, Property & Construction</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="property" class="property"></img>
+            <figcaption>
+              <h3>Housing, Property & Construction</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="records-icon"></span>
-        <h3>Personal Records</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="personal records" class="records"></img>
+            <figcaption>
+              <h3>Personal Records</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="vot-elec-cens-icon"></span>
-        <h3>Voting, Elections & Census</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="voting" class="vot-elec-cens"></img>
+            <figcaption>
+              <h3>Voting, Elections & Census</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="city-dev-icon"></span>
-        <h3>City & Neighborhood Development</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="neighborhood development" class="city-dev"></img>
+            <figcaption>
+              <h3>City & Neighborhood Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="edu-icon"></span>
-        <h3>Education, Schools & Scholarship</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="garbage-recycling-graffiti.html">
+          <figure>
+            <img src="" alt="education" class="edu"></img>
+            <figcaption>
+              <h3>Education, Schools & Scholarship</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="pet-icon"></span>
-        <h3>Pet Ownership</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="garbage-recycling-graffiti.html">
+          <figure>
+            <img src="" alt="pets" class="pet"></img>
+            <figcaption>
+              <h3>Pet Ownership</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="parks-icon"></span>
-        <h3>Parks & Environment</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="parks" class="parks"></img>
+            <figcaption>
+              <h3>Parks & Environment</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
       <div class="col span-one-of-five">
-        <span class="arts-icon"></span>
-        <h3>Arts & Entertainment</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="transportation-streets-parking.html">
+          <figure>
+            <img src="" alt="arts" class="arts"></img>
+            <figcaption>
+              <h3>Arts & Entertainment</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
     </div>
   </section>
