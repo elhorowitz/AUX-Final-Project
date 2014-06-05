@@ -126,6 +126,8 @@ li {
 
 .half { width: 50%; }
 
+.one-third { width: 33.333%; }
+
 header,
 section {
   margin: 10px 0;
@@ -303,3 +305,17 @@ section {
 .footer p {
   margin-top: 0;
 }
+
+/*---------- Tracking Page Stylings ----------*/
+.tracking-content li {
+  float: none;
+}
+
+.tracking-content .variable-info {
+  font-weight: normal;
+}
+
+
+
+
+
