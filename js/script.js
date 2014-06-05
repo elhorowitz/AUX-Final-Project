@@ -24,7 +24,7 @@
 
   //====================================
   //Function to show report form
-  var showForm = function (el) { 
+  var showForm = function (el) {
     $(".report").removeClass("hidden");
   };
 
