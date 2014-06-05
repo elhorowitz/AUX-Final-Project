@@ -17,14 +17,16 @@ body {
   font-size: 100%;
   line-height: 1.5;
   margin: auto;
-  max-width: 960px;
   position: relative;
-  width: 80%;
+  width: 100%;
+}
+
+header {
+  margin: 0;
+  padding: 0;
 }
 
 img {
-  height: 100%;
-  width: 100%;
 }
 
 figure {
@@ -44,15 +46,17 @@ figure {
 
 /*---------- Typography ----------*/
 h1 {
-
+  font-size: 34px;
 }
 
 h2 {
-
+  font-size: 32px;
+  font-weight: normal;
 }
 
 h3 {
-
+  font-size: 24px;
+  font-weight: normal;
 }
 
 p {
@@ -65,12 +69,13 @@ p:first-child {
 }
 
 a {
-  color: blue;
+  color: #279EDE;
+  line-height: 1;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #279EDE;
 }
 
 ul {
@@ -128,15 +133,16 @@ li {
 
 .one-third { width: 33.333%; }
 
-header,
-section {
-  margin: 10px 0;
-}
+.two-thirds { width: 66.667%; }
 
 
 
 
 /*---------- Form Elements ----------*/
+.form {
+  position: relative;
+}
+
 .form fieldset {
   border: none;
 }
@@ -147,44 +153,107 @@ section {
 
 .form label {
   cursor: pointer;
+  display: block;
   font-weight: bold;
 }
 
-.form input[type="text"] {
-  
+.form input[type="text"],
+.form input[type="email"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: inset 0 2px 3px -2px #F1F1F1;
+          box-shadow: inset 0 2px 3px -2px #F1F1F1;
+  border: none;
+  height: 50px;
+  padding: 0 10px;
+  width: 80%;
+  margin-bottom: 10px;
 }
 
 .form input[type="submit"] {
-  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-border-radius: 1px;
+     -moz-border-radius: 1px;
+          border-radius: 1px;
+  background: #F1A742;
+  border: none;
+  color: #fff;
+  height: 50px;
+  text-transform: uppercase;
+  width: 160px;
+}
+
+.form input[type="submit"]:hover {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #fff;
+  border: 1px solid #F1A742;
+  color: #F1A742;
+  height: 50px;
+  text-transform: uppercase;
+  width: 160px;
 }
 
 
 
 
 /*---------- Main Page Stylings ----------*/
-.boston_seal {
-  display: block;
-  height: 100px;
-  width: 100px;
+.top-header {
+  height: 15%;
+  padding: 30px 20px 20px;
+  position: relative;
+  margin: auto;
+  max-width: 1000px;
+  min-height: 150px;
 }
 
-.getapp { float: right; }
+.boston_seal {
+  display: block;
+}
+
+.boston_seal:hover {
+  border-bottom: none;
+}
+
+.main-nav { 
+  font-size: 24px;
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  text-transform: uppercase;
+}
 
 .head-content {
   height: 100%;
-}
-
-.main-nav {
-  border-bottom: 1px solid #000;
-  margin: 10px 0;
+  overflow: hidden;
 }
 
 .home {
-  background: yellowgreen;
-  padding: 20px;
+  background: url('/images/Boston-skyline.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85%;
+  min-height: 330px;
+  position: relative;
+}
+
+.header-wrapper {
+  opacity: .8;
+  margin: auto;
+  max-width: 1000px;
+  padding: 50px;
+  position: relative;
 }
 
 .content-header {
+  background: #F0F9FE;
   height: 100%;
 }
 
@@ -199,60 +268,132 @@ section {
 }
 
 .content-header .form label {
-  font-style: italic;
   padding-right: 10px;
-  text-decoration: underline;
+}
+
+.content-header .form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.top-actions {
+  background: #FFFFFF;
+  display: block;
+  margin: auto;
+  max-width: 1000px;
+  padding: 10px 25px;
+  position: relative;
+}
+
+.top-actions h2 {
+  color: #0C3F76;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .action-nav {
+  background: #F0F9FE;
+  height: 400px;
   padding: 0;
   position: relative;
 }
 
 .action-item {
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #CAD1D3;
   cursor: pointer;
   float: none;
-  height: 44px;
-  margin: 0;
-  padding: 10px;
+  height: 100px;
+  margin: 0 25px 0 0;
+  padding: 0 15px;
   position: relative;
+  text-transform: uppercase;
+  line-height: 100px;
   width: 100%;
 }
 
 .action-item:first-child {
-  border-top: 1px solid #000;
+  border-top: 0;
+}
+
+.action-item:hover {
+  color: #279EDE;
 }
 
 .action-item.selected {
-  background: #fff;
+  background: #279EDE;
   border-left: none;
+  color: #fff;
 }
 
 .action-item.selected:after {
   content: " ";
-  border-top: 21px solid transparent;
-  border-left: 20px solid #fff;
-  border-bottom: 21px solid transparent;
+  border-top: 50px solid transparent;
+  border-right: 50px solid #f1f1f1;
+  border-bottom: 50px solid transparent;
   height: 0;
   position: absolute;
-  right: -20px;
+  right: 0;
   top: 0;
   width: 0;
 }
 
 .action-content-wrapper {
-  border: 1px solid #000;
-  height: 350px;
-  padding-left: 30px;
+  background: #F1F1F1;
+  height: 400px;
+  padding: 0;
 }
 
 .action-content {
   display: none;
+  height: 100%;
 }
 
-.action-content .form label {
+.border-bottom {
   display: block;
+  float: left;
+  padding: 0 25px;
+  height: 100px;
+}
+
+.quicklink {
+  border-bottom: 1px solid #CAD1D3;
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.noborder {
+  border-bottom: 0;
+}
+
+.quicklink a {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.border-bottom:hover{
+  background: #F1A742;
+}
+
+.quicklink:hover a {
+  color: #fff;
+  border-bottom: 0;
+}
+
+.action-content .form {
+  padding: 50px;
+  height: 100%;
+}
+
+.action-content .form input[type="submit"] {
+  bottom: 50px;
+  position: absolute;
 }
 
 .action-content .input-wrapper {
@@ -261,10 +402,6 @@ section {
 
 .shown {
   display: block;
-}
-
-.top-actions {
-  background: yellowgreen;
 }
 
 .social-media {

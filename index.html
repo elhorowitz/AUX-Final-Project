@@ -16,88 +16,108 @@
 </head>
 <body>
   <section class="head-content">
-    <header class="content-header home">
+    <header class="content-header">
       <div class="top-header">
-        <a href="" class="getapp">Download the Citizen's Connect App!</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#services">Services & Information</a></li>
+          </ul>
+        </nav>
         <a href="" class="boston_seal"><img src="images/Boston_city_seal.png" alt="city of boston seal" /></a>
       </div>
-  
-      <div class="header-wrapper">
-        <h1>Welcome to Citizen's Connect</h1>
-      </div>
-      <div class="header-wrapper">
-        <h3>Info about boston. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
-      </div>
-      <div class="header-wrapper">
-        <form class="form">
-          <label for="search_site">I am looking for: </label>
-          <input id="search_site" name="searchterm" type="search">
-          <input type="submit" value="go">
-        </form>
+      <div class="home">
+        <div class="header-wrapper">
+          <h1>Welcome to Citizen's Connect</h1>
+          <h3>The best place to find city services and information.</h3>
+          <form class="form">
+            <label for="search_site">I am looking for: </label>
+            <input id="search_site" name="searchterm" type="search">
+          </form>
+        </div>
       </div>
     </header>
   </section>
-  <nav class="main-nav">
-    <ul class="row">
-      <li class="span-one-of-five"><a href="index.html">Home</a></li>
-      <li class="span-one-of-five"><a href="">Services & Information</a></li>
-    </ul>
-  </nav>
   <section class="top-actions">
     <h2>Top Actions</h2>
     <div class="row">
-      <ul class="action-nav col span-one-of-five">
+      <ul class="action-nav col one-third">
         <li id="pay" class="action-item selected">Make a Payment</li>
         <li id="report" class="action-item">Report an Issue</li>
         <li id="request" class="action-item">Request a City Service</li>
         <li id="track" class="action-item">Track a Report / Request</li>
       </ul>
-      <div class="action-content-wrapper col span-four-of-five" aria-live="polite">
+      <div class="action-content-wrapper col two-thirds" aria-live="polite">
         <div id="pay-content" class="action-content shown">
-          <h3 class="action-header">Make a Payment</h3>
-          <p>Text and instructions about making a payment. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <ul class="actions-wrapper row">
-            <li class="half"><a href="pay-form.html">Pay a parking ticket</a></li>
-            <li class="half"><a href="pay-form.html">Pay personal property tax</a></li>
-            <li class="half"><a href="pay-form.html">Pay water & sewer bill</a></li>
-            <li class="half"><a href="pay-form.html">Pay a motor vehicle excise tax</a></li>
-            <li class="half"><a href="pay-form.html">Pay a boat excise tax</a></li>
-            <li class="half"><a href="pay-form.html">Pay real estate tax</a></li>
+            <div class="border-bottom half"> 
+              <li class="quicklink"><a href="pay-form.html">Pay a parking ticket</a></li>
+            </div>
+            <div class="border-bottom half"> 
+              <li class="quicklink"><a href="pay-form.html">Pay personal property tax</a></li>
+            </div>
+            <div class="border-bottom half"> 
+              <li class="quicklink"><a href="pay-form.html">Pay water & sewer bill</a></li>
+            </div>
+            <div class="border-bottom half"> 
+              <li class="quicklink"><a href="pay-form.html">Pay a motor vehicle excise tax</a></li>
+            </div>
+            <div class="border-bottom half"> 
+              <li class="quicklink"><a href="pay-form.html">Pay a boat excise tax</a></li>
+            </div>
+            <div class="border-bottom half"> 
+              <li class="quicklink half"><a href="pay-form.html">Pay real estate tax</a></li>
+            </div>
           </ul>
         </div>
         <div id="report-content" class="action-content">
-          <h3 class="action-header">Report an Issue</h3>
-          <p>Text and instructions about filing a report. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <ul class="actions-wrapper row">
-            <li class="half"><a href="report-form.html">Damaged traffic light</a></li>
-            <li class="half"><a href="report-form.html">Missed trash or recycling pick-up</a></li>
-            <li class="half"><a href="report-form.html">Illegal Dumping</a></li>
-            <li class="half"><a href="report-form.html">Broken Streetlamp, pothole, or cracked sidewalk</a></li>
-            <li class="half"><a href="report-form.html">Building structure issue</a></li>
-            <li class="half"><a href="report-form.html">Utilities are not working</a></li>
-            <li class="half"><a href="report-form.html">Graffiti</a></li>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="report-form.html">Damaged traffic light</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="report-form.html">Missed trash or recycling pick-up</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="report-form.html">Illegal Dumping</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="report-form.html">Broken Streetlamp, pothole, or cracked sidewalk</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="report-form.html">Building structure issue</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="report-form.html">Utilities are not working</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink noborder half"><a href="report-form.html">Graffiti</a></li>
+            </div>
           </ul>
         </div>
         <div id="request-content" class="action-content">
-          <h3 class="action-header">Request a City Service</h3>
-          <p>Text and instructions about requesting a city service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <ul class="actions-wrapper row">
-            <li class="half"><a href="request-form.html">Moving day street permit</a></li>
-            <li class="half"><a href="request-form.html">Tree maintanence Request</a></li>
-            <li class="half"><a href="request-form.html">Large or bulk item removal</a></li>
-            <li class="half"><a href="request-form.html">Request a recycling container</a></li>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="request-form.html">Moving day street permit</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="request-form.html">Tree maintanence Request</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="request-form.html">Large or bulk item removal</a></li>
+            </div>
+            <div class="border-bottom half">
+              <li class="quicklink"><a href="request-form.html">Request a recycling container</a></li>
+            </div>
           </ul>
         </div>
         <div id="track-content" class="action-content">
-          <h3 class="action-header">Track a Previous Request or Report</h3>
-          <p>Text and instructions about tracking previous requests and reports. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <form class="form" action="track-page.html" method="get">
             <div class="input-wrapper">
-              <label class="form-label" for="conf-num">Enter the confirmation #:</label>
+              <label class="form-label" for="conf-num">Please enter your confirmation #:</label>
               <input id="conf-num" name="conf-num" type="text" placeholder="ex. 555">
             </div>
             <div class="input-wrapper">
-              <label class="form-label" for="email">Enter the email address used to submit your request:</label>
+              <label class="form-label" for="email">Please enter the email address used to submit your request:</label>
               <input id="email" name="email" type="email" placeholder="ex. user@test.com">
             </div>
 
@@ -109,7 +129,7 @@
   </section>
   
   <section class="services-info">
-    <h2>Services and Information</h2>
+    <a id="services"><h2>Services and Information</h2></a>
     <div class="row">
       <div class="col span-one-of-five">
         <a href="transportation-streets-parking.html">
