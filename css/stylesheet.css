@@ -315,7 +315,17 @@ section {
   font-weight: normal;
 }
 
+/*---------- Services and Info Page Stylings ----------*/
+.services-content .table-of-contents li {
+  float: none;
+}
 
+.services-content .table-of-contents li ul {
+  margin-left: 10px;
+}
 
+.service-section .links li {
+  float: none;
+}
 
 
