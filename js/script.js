@@ -80,6 +80,9 @@
     window.location.replace(url + "?hash=" + anchor);
   });
 
+  //====================================
+  //Function to switch between tabs
+
 
 
   //====================================
@@ -105,6 +108,13 @@
     }
   };
 
+  var sideMenu = function (el) {
+    console.log("hi");
+    $(".services-info").css("right", "0")
+  };
+
+
+
   var mq = window.matchMedia( "(max-width: 750px)" );
   if (mq.matches) {
   // window width is at most 750px
@@ -112,6 +122,7 @@
       e.preventDefault();
       accordian($(this));
     });
+    
   } else {
     $(".action-item").on("click", function(e) {
       e.preventDefault();
