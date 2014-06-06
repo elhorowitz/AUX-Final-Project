@@ -1185,7 +1185,13 @@ fieldset.input-wrapper input[type="submit"] {
     display: inline-block;
     margin: 10px 0;
     width: 100%;
-    text-align: justify;
+    text-align: right;
+  }
+
+  .main-nav.home {
+    width: auto;
+    position: absolute;
+    right: 0;
   }
 
   .short .form-wrapper {
