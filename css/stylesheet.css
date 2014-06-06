@@ -43,6 +43,10 @@ figure {
   text-decoration: none !important;
 }
 
+.map {
+  margin: 25px 0;
+}
+
 
 /*---------- Typography ----------*/
 h1 {
@@ -181,6 +185,15 @@ li {
 
 .form fieldset {
   border: none;
+  padding: 25px 0;
+}
+
+.form legend {
+  border: none;
+}
+
+.form .input-wrapper {
+  margin-bottom: 10px;
 }
 
 .form input {
@@ -189,22 +202,30 @@ li {
           box-shadow: none; 
 }
 
-.form label {
+.form .form-label {
   cursor: pointer;
   display: block;
   font-weight: 600;
+  padding-top: 0;
 }
 
 .form input[type="text"],
-.form input[type="email"] {
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: none;
+  border: 1px solid #DDDFDE;
   height: 50px;
   padding: 0 10px;
   width: 100%;
   margin: 10px 0;
+}
+
+.form textarea {
+  height: auto;
+  width: auto;
 }
 
 ::-webkit-input-placeholder { font-weight: light; font-style: italic; }
@@ -212,7 +233,8 @@ li {
 ::-moz-placeholder { font-weight: light; font-style: italic; }
 :-ms-input-placeholder { font-weight: light; font-style: italic; }
 
-.form input[type="submit"] {
+.form input[type="submit"],
+.form button[type="button"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -228,16 +250,11 @@ li {
   width: 160px;
 }
 
-.form input[type="submit"]:hover {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.form input[type="submit"]:hover,
+.form button[type="button"]:hover {
   background: #fff;
-  border: 1px solid #f2a930;
+  border: 2px solid #f2a930;
   color: #f2a930;
-  height: 50px;
-  text-transform: uppercase;
-  width: 160px;
 }
 
 
@@ -649,6 +666,7 @@ li {
 .up-wrapper:hover,
 .up-wrapper:hover a {
   color: #fff !important;
+  text-decoration: none;
 }
 
 .footer .section-wrapper { 
@@ -690,13 +708,32 @@ li {
 }
 
 /*---------- Tracking Page Stylings ----------*/
+.tracking-content {
+  padding: 20px 0;
+}
+
 .tracking-content li {
   float: none;
 }
 
-.tracking-content .variable-info {
-  font-weight: normal;
+.tracking-content h2{
+  font-size: 20px;
 }
+
+.tracking-content .variable-info {
+  color: #53585f;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 15px;
+  text-transform: none;
+}
+
+.my-info { margin-bottom: 40px; }
+
+.note {
+  font-style: italic;
+}
+
 
 /*---------- Services and Info Page Stylings ----------*/
 .services-content {
@@ -797,4 +834,120 @@ li {
   margin: 5px 0px;
   line-height: 1.2;
 }
+
+
+/*---------- Services form Stylings ----------*/
+
+.main-form {
+  margin: 40px auto;
+}
+
+.main-form .form-label,
+.main-form select {
+  float: left;
+}
+
+.main-form input[type="text"],
+.main-form input[type="email"],
+.main-form input[type="tel"] {
+  width: 60%;
+}
+
+.main-form select { margin-left: 10px;}
+
+.main-form input[type="submit"] {
+  float: none;
+}
+
+.main-form button[type="button"] { 
+  float: none;
+  padding: 0 20px;
+  position: relative;
+  width: auto;
+}
+
+.personal-info fieldset {
+  padding-bottom: 40px;
+}
+
+.personal-info legend {
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  top: 24px;
+  position: relative;
+}
+
+.personal-info .form-label {
+  background: #CFE9FB;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px 0;
+  padding: 0 10px;
+  text-align: right;
+  width: 10%;
+}
+
+.personal-info input[type="text"],
+.personal-info input[type="email"],
+.personal-info input[type="tel"] {
+  float: left;
+  width: 50%;
+}
+
+.report {
+  margin-top: 20px; 
+}
+
+.report .form-label.upload {
+  float: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+
+.radios .form-label {
+  float: none;
+  position: relative;
+  top: 20px;
+}
+
+.or-wrapper {
+  display: inline-block;
+  height: 38px;
+  margin: 20px 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.horizontal-line {
+  display: block;
+  position: absolute;
+  top: 12px;
+  width: 100%;
+  z-index: -1;
+}
+
+.or-wrapper h2 {
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center; 
+  width:50px;
+}
+
+.dob { padding: 0 !important; }
+
+.dob .form-label { 
+  position: relative;
+  top: 20px; 
+}
+
+.dob input[type="text"] {
+  width: 100px;
+}
+
+.dob h3 { display: inline-block; line-height: 100px}
 
