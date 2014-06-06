@@ -1,6 +1,12 @@
 (function(){
   'use strict';
 
+
+  //====================================
+  //Function for accordian
+
+
+
   //====================================
   //Smooth Scrolling
   $('a[href*=#]:not([href=#])').click(function() {
@@ -28,6 +34,8 @@
     e.preventDefault();
     changeSelect($(this));
   });
+
+
 
   //====================================
   //Function for displaying image files
@@ -77,23 +85,43 @@
   //====================================
   //Function to switch between tabs
   var toggleTab = function (el) {
-    var thisTab = "#" + el.attr("id");
-    var tabContents = thisTab + "-content";
+    var tabContents = el.parent().find($(".action-content"));
 
-    $(thisTab).addClass("selected");
+    el.addClass("selected");
     $(tabContents).addClass("shown");
 
-    $(thisTab).siblings().removeClass("selected");
-    $(tabContents).siblings().removeClass("shown");
+    el.parent().siblings().find($(".action-item")).removeClass("selected");
+    el.parent().siblings().find($(".action-content")).removeClass("shown");
   };
 
-  $(".action-nav .action-item").on("click", function(e) {
-    e.preventDefault();
-
-    if ( ! $(this).hasClass("selected") ) {
-      toggleTab($(this));
+  var accordian = function (el) {
+    var tabContents = el.parent().find($(".action-content"));
+    if (el.hasClass("selected")){
+      el.removeClass("selected");
+      $(tabContents).slideUp();
+    } else {
+      el.addClass("selected");
+      $(tabContents).slideDown();
     }
-  });
+  };
+
+  var mq = window.matchMedia( "(max-width: 750px)" );
+  if (mq.matches) {
+  // window width is at most 750px
+    $(".action-item").on("click", function(e) {
+      e.preventDefault();
+      accordian($(this));
+    });
+  } else {
+    $(".action-item").on("click", function(e) {
+      e.preventDefault();
+
+      if ( ! $(this).hasClass("selected") ) {
+        toggleTab($(this));
+      }
+    });
+  }
+
 
   //====================================
   //Function to show report form
@@ -105,6 +133,7 @@
     e.preventDefault();
     showForm($(this));
   });
+
 
   //====================================
   //Function to change image on hover
