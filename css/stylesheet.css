@@ -562,7 +562,7 @@ input#uploadFile {
 #request .action-item{ left: 0; top: 200px; }
 
 #track .action-item { left: 0; top: 300px; }
-
+  
 
 .action-item:hover {
   color: #1a9ce1;
@@ -1144,6 +1144,7 @@ fieldset.input-wrapper input[type="submit"] {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 0;
+  width: 100%;
 }
 
 
@@ -1154,7 +1155,7 @@ fieldset.input-wrapper input[type="submit"] {
     float: none;
   }
 
-  .span-one-of-five { width: 100%; }
+  .span-one-of-five { width: 50%; }
 
   .span-two-of-five { width: 100%; }
 
@@ -1170,6 +1171,26 @@ fieldset.input-wrapper input[type="submit"] {
 
   .two-thirds { width: 100%; }
 
+  .top-header {
+    height: auto;
+  }
+
+  .short .main-nav,
+  .main-nav {
+    font-size: 16px;
+    top: auto;
+    position: relative;
+    right: auto;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .short .form-wrapper {
+    display: block;
+    width: 100%;
+  }
 
   .section-wrapper {
     display: inline-block;
@@ -1195,7 +1216,6 @@ fieldset.input-wrapper input[type="submit"] {
   }
 
   .action-item {
-    
     float: none;
     position: relative;
     width: 100%;
@@ -1237,8 +1257,52 @@ fieldset.input-wrapper input[type="submit"] {
   }
 }
 
+.media-wrapper {
+  margin: 0;
+}
 
+.footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center; 
+}
 
+.section-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.form .select-wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+.main-form input[type="text"], 
+.main-form input[type="email"], 
+.main-form input[type="tel"],
+.form textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
+.personal-info .form-label {
+  width: 20%;
+}
+
+.personal-info input[type="text"], 
+.personal-info input[type="email"], 
+.personal-info input[type="tel"] {
+  width: 60%;
+}
+
+.cityofboston {
+  display: inline-block;
+  float: none;
+  margin-bottom: 20px;
+}
+
+.table-of-contents {
+  width: 100%;
+}
 
 
