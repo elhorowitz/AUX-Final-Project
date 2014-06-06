@@ -67,7 +67,6 @@
   });
 
   $('.search_box').on('change', function(e) {
-    e.preventDefault();
     var url = $(this).val()[0].split(" ")[0] + ".html";
     var anchor = "#" + $(this).val()[0].split(" ")[1];
     window.location.replace(url + "?hash=" + anchor);

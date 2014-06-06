@@ -692,18 +692,17 @@ input#uploadFile {
 .services-info p { 
   font-size: 14px;
   margin: 0;
+  text-transform: none;
 }
 
 .services-info h3 { 
-  color: #000;
-  font-family: 'Oswald', sans-serif;
+  color: #fff;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
   position: absolute;
   top: 50px;
   text-align: center;
-  text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff;
   text-transform: uppercase;
 }
 
@@ -741,7 +740,7 @@ input#uploadFile {
 
 .media-wrapper:hover {
   background: #d3e9fa;
-  border-bottom: 2px solid #A6AAA9;
+  text-decoration: none;
 }
 
 .media-wrapper img {
@@ -771,89 +770,6 @@ input#uploadFile {
 }
 
 
-/*---------- Footer Stylings ----------*/
-.footer {
-  background: #063d78;
-  border-top: 7px solid #f2a930;
-  color: #fff;
-  padding: 20px 0 0;
-}
-
-.up-wrapper {
-  background: #fff;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  color: #525860;
-  cursor: pointer;
-  display: block;
-  height: 60px;
-  margin: -50px auto 0;
-  padding:5px 0;
-  position: relative; 
-  text-align: center;
-  width: 60px;
-}
-
-.icon-arrow-up {
-  display: block;
-  margin: 5px 0 0;
-}
-
-.up-wrapper a {
-  border-bottom: none !important;
-  color: #525860 !important;
-  display: block;
-}
-
-.up-wrapper:hover {
-  background: #f2a930; 
-}
-
-.up-wrapper:hover,
-.up-wrapper:hover a {
-  color: #fff !important;
-  text-decoration: none;
-}
-
-.footer .section-wrapper { 
-  margin-top: 0;
-  padding: 40px 0 10px; 
-}
-
-.footer a {
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  font-weight: bold;
-}
-
-.footer a:hover {
-  border-bottom-color: #1a9ce1;
-  color: #1a9ce1;
-}
-
-.footer p {
-  margin: 0;
-}
-
-.footer-section {
-  margin-bottom: 30px;
-}
-
-.cityofboston { float: right; }
-
-.label {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.bottom-footer .section-wrapper{
-  border-top: 1px solid #41648C;
-  text-align: center;
-  padding: 20px 0;
-  margin-bottom: 0;
-}
 
 /*---------- Tracking Page Stylings ----------*/
 .tracking-content {
@@ -1130,3 +1046,89 @@ fieldset.input-wrapper input[type="submit"] {
 
 .dob h3 { display: inline-block; line-height: 100px}
 
+/*---------- Footer Stylings ----------*/
+.footer {
+  background: #063d78;
+  border-top: 7px solid #f2a930;
+  color: #fff;
+  font-weight: 300;
+  padding: 20px 0 0;
+}
+
+.up-wrapper {
+  background: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #525860;
+  cursor: pointer;
+  display: block;
+  height: 60px;
+  margin: -50px auto 0;
+  padding:5px 0;
+  position: relative; 
+  text-align: center;
+  width: 60px;
+}
+
+.icon-arrow-up {
+  display: block;
+  margin: 5px 0 0;
+}
+
+.up-wrapper a {
+  border-bottom: none !important;
+  color: #525860 !important;
+  display: block;
+}
+
+.up-wrapper:hover {
+  background: #f2a930; 
+}
+
+.up-wrapper:hover,
+.up-wrapper:hover a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.footer .section-wrapper { 
+  margin-top: 0;
+  padding: 40px 0 10px; 
+}
+
+.footer a {
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+}
+
+.footer a:hover {
+  color: #1a9ce1;
+  border-bottom-color: #1a9ce1;
+  text-decoration: none;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.cityofboston { float: right; }
+
+.label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.bottom-footer .section-wrapper{
+  border-top: 1px solid #41648C;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
