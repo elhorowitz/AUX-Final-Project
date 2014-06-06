@@ -460,6 +460,7 @@ li {
   display: block;
   float: left;
   padding: 0 25px;
+  position: relative;
   height: 100px;
 }
 
@@ -481,8 +482,20 @@ li {
   vertical-align: middle;
 }
 
-.border-bottom:hover{
+.border-bottom:hover {
   background: #f2a930;
+}
+
+.border-bottom.left:hover:before {
+  content: " ";
+  border-top: 50px solid transparent;
+  border-right: 50px solid #f2a930;
+  border-bottom: 50px solid transparent;
+  height: 0;
+  position: absolute;
+  left: -50px;
+  
+  width: 0;
 }
 
 .quicklink:hover a {
@@ -501,11 +514,12 @@ li {
 }
 
 .action-content.form p {
-  margin: 0 0 20px;
+  font-size: 16px;
+  margin: 15px 0 20px;
 }
 
 .action-content .input-wrapper {
-  margin-bottom: 20px;
+  margin: 15px 0 0;
 }
 
 .shown {
@@ -570,12 +584,13 @@ li {
 .download-app h3 {
   text-align: center;
   text-transform: uppercase;
+  margin: 15px 0;
 }
 
 .download-app .section-wrapper {
   border-bottom: 2px solid #CAD1D3;
   border-top: 2px solid #CAD1D3;
-  padding: 10px 0 30px;
+  padding: 40px 0;
 }
 
 .media-wrapper {
@@ -617,7 +632,7 @@ li {
 
 .tweet-wrapper {
   display: block;
-  margin: auto;
+  margin: 15px auto;
   position: relative;
   text-align: left; 
 }
