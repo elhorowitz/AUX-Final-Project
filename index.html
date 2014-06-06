@@ -129,15 +129,17 @@
             </div>
           </ul>
         </div>
-        <div id="track-content" class="action-content">
-          <form class="form" action="track-page.html" method="get">
+        <div id="track-content" class="action-content form">
+          <h3>Track A Previous Request Or Report</h3>
+          <p>Bacon ipsum dolor sit amet t-bone corned beef flank, beef meatball shankle pork. Hamburger fatback pork belly short ribs pancetta swine ball tip ham kevin boudin</p>
+          <form action="track-page.html" method="get">
             <div class="input-wrapper">
-              <label class="form-label" for="conf-num">Please enter your confirmation #:</label>
-              <input id="conf-num" name="conf-num" type="text" placeholder="ex. 555">
+              <label class="form-label" for="conf-num">Please enter your confirmation number:</label>
+              <input id="conf-num" name="conf-num" type="text" placeholder="ex. 555" aria-required="true" required>
             </div>
             <div class="input-wrapper">
               <label class="form-label" for="email">Please enter the email address used to submit your request:</label>
-              <input id="email" name="email" type="email" placeholder="ex. user@test.com">
+              <input id="email" name="email" type="email" placeholder="ex. user@test.com" aria-required="true" required>
             </div>
 
             <input type="submit" value="submit">
