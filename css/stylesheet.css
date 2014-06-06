@@ -1173,6 +1173,7 @@ fieldset.input-wrapper input[type="submit"] {
 
   .top-header {
     height: auto;
+    padding-top: 20px;
   }
 
   .short .main-nav,
@@ -1181,8 +1182,8 @@ fieldset.input-wrapper input[type="submit"] {
     top: auto;
     position: relative;
     right: auto;
-    display: block;
-    margin-top: 10px;
+    display: inline-block;
+    margin: 10px 0;
     width: 100%;
     text-align: justify;
   }
