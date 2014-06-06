@@ -16,6 +16,47 @@
     }
   });
 
+  //====================================
+  //Function for dropdown menu
+  var changeSelect = function (el) {
+    var selValue = el.val();
+    var selected = el.find($("option[value='"+selValue+"']")).text();
+    el.parent().find(".value").text(selected);
+  };
+
+  $("select").change(function(e) {
+    e.preventDefault();
+    changeSelect($(this));
+  });
+
+  //====================================
+  //Function for displaying image files
+  function readURL(input) {
+
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      $('#preview').removeClass("hidden");
+      reader.onload = function (e) {
+        $('#preview').attr('src', e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+      $(".preview-wrapper").css("display", "inline-block");
+      $(".preview-wrapper").css("height", "auto");
+      $(".preview-wrapper").css("width", "auto");
+
+      var filename = $("#uploadBtn").val().split("\\");
+      var length = filename.length - 1;
+      filename = filename[length];
+      $("#uploadFile").attr("value", filename);
+    }
+  }
+
+  $("#uploadBtn").change(function(e){
+      readURL(this);
+  });
+
+
 
   //====================================
   //Function for page search

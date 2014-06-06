@@ -6,7 +6,7 @@
 <!--[if gt IE 9]><!--> <html lang="en"><!--<![endif]-->
 
 <head>
-<link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:300italic,400,700,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:300,300italic,400,700,600' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
@@ -18,7 +18,7 @@
 </head>
 <body>
   <a id="top"></a>
-  
+
   <section class="main-content">
     <header class="content-header short">
       <div class="top-header">
@@ -53,62 +53,61 @@
     </header>
 
     <div class="section-wrapper">
+      <h2>Pay a Parking Violation</h2>
+      <p>Text and instructions about making a payment. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <form class="form">
-        <h2>Pay a Parking Ticket</h2>
-        <p>Text and instructions about making a payment. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class="input-wrapper">
-          <h3>Pay By Looking Up Your Violation Number</h3>
+        <fieldset class="input-wrapper">
+          <legend class="option">Pay By Looking Up Your Violation Number</legend>
           <label class="form-label" for="ticket-num">Please enter your ticket or violation number #:</label>
-          <input id="ticket-num" name="ticket-num" type="text" placeholder="ex. 555">
-        </div>
-        <input type="submit" value="submit">
+          <input id="ticket-num" name="ticket-num" type="text" placeholder="ex. 555" aria-required="true" required>
+          <input type="submit" value="continue">
+        </fieldset>
       </form>
       <div class="or-wrapper">
         <hr class="horizontal-line"></hr>
         <h2>OR</h2>
       </div>
       <form class="form">
-        <div class="input-wrapper">
-          <h3>Pay By Looking Up Your Notice Number</h3>
+        <fieldset class="input-wrapper">
+          <legend class="option">Pay By Looking Up Your Notice Number</legend>
           <label class="form-label" for="notice-num">Please enter your notice number:</label>
-          <input id="notice-num" name="notice-num" type="text" placeholder="ex. 555">
-        </div>
-        <input type="submit" value="submit">
+          <input id="notice-num" name="notice-num" type="text" placeholder="ex. 555" aria-required="true" required>
+          <input type="submit" value="continue">
+        </fieldset>
       </form>
       <div class="or-wrapper">
         <hr class="horizontal-line"></hr>
         <h2>OR</h2>
       </div>
-
-
-        <div class="input-wrapper">
-          <h3>Pay By Looking Up Your Registration Information</h3>
+      <form class="form">
+        <fieldset class="input-wrapper">
+          <legend class="option">Pay By Looking Up Your Registration Information</legend>
           <label class="form-label" for="license-plate">Massachusetts license plate number:</label>
-          <input id="license-plate" name="license-plate" type="text" placeholder="ex. 555">
-        </div>
-        <fieldset>
-          <legend class="form-label">Type of License</legend>
-          <div class="row">
-            <input id="passenger" name="radio" type="radio" value="passenger" aria-required="true" required>
-            <label for="passenger">Passenger</label>
-          </div>
-          <div class="row">
-            <input id="commercial" name="radio" type="radio" value="commercial">
-            <label for="commercial">Commercial</label>
-          </div>
-        </fieldset>
-        <fieldset class="dob">
-          <legend class="form-label">Month and Year of Birth</legend>
-          <div class="input-wrapper">
-            <label class="hidden" for="DOB-month" aria-hidden="true">Month</label>
-            <input id="DOB-month" name="DOB-month" type="text" placeholder="MM">
-            <h3>/</h3>
+          <input id="license-plate" name="license-plate" type="text" placeholder="ex. 555" aria-required="true" required>
+          <fieldset>
+            <legend class="form-label">Type of License</legend>
+            <div class="row">
+              <input id="passenger" name="radio" type="radio" value="passenger" aria-required="true" required>
+              <label for="passenger">Passenger</label>
+            </div>
+            <div class="row">
+              <input id="commercial" name="radio" type="radio" value="commercial">
+              <label for="commercial">Commercial</label>
+            </div>
+          </fieldset>
+          <fieldset class="dob">
+            <legend class="form-label">Month and Year of Birth</legend>
+            <div class="input-wrapper">
+              <label class="hidden" for="DOB-month" aria-hidden="true">Month</label>
+              <input id="DOB-month" name="DOB-month" type="text" placeholder="MM" aria-required="true" required>
+              <h3>/</h3>
 
-            <label class="hidden" for="DOB-year" aria-hidden="true">Year</label>
-            <input id="DOB-year" name="DOB-year" type="text" placeholder="YYYY">
-          </div>
+              <label class="hidden" for="DOB-year" aria-hidden="true">Year</label>
+              <input id="DOB-year" name="DOB-year" type="text" placeholder="YYYY" aria-required="true" required>
+            </div>
+          </fieldset>
+          <input type="submit" value="continue">
         </fieldset>
-        <input type="submit" value="submit">
       </form>
     </div>
 

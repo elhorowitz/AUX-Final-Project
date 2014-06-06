@@ -6,7 +6,7 @@
 <!--[if gt IE 9]><!--> <html lang="en"><!--<![endif]-->
 
 <head>
-<link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:300italic,400,700,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:300,300italic,400,700,600' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
@@ -18,7 +18,7 @@
 </head>
 <body>
   <a id="top"></a>
-  
+
   <section class="main-content">
     <header class="content-header short">
       <div class="top-header">
@@ -33,6 +33,7 @@
           <form class="form" action="" method="get">
             <label for="search_site">I am looking for: </label>
             <select class="search_box" id="search" multiple name="searchfield" data-placeholder="ie. Parking Ticket">
+              <option value="" disabled>No Option Selected</option>
               <option value="transportation-streets-parking Cars"><a href="">Car Services</a></option>
               <option value="transportation-streets-parking Bikes">Bicycle Services</option>
               <option value="transportation-streets-parking Public">Public Transportation</option>
@@ -58,17 +59,24 @@
         <p>Text and instructions about making a request. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <fieldset class="input-wrapper row">
           <legend class="form-label">I am requesting the City Waste Department pickup the following bulk item:</legend>
-          <select id="issue" name="select" aria-required="true" required>
-            <option value="fridge">Refrigerator</option>
-            <option value="ac">Air-Conditioning Unit</option>
-            <option value="tv">TV</option>
-            <option value="oven">Oven</option>
-            <option value="washingmachine">Washing Machine</option>
-          </select>
+          <label for="select" class="form-label hidden">Select Issue</label>
+          <div class="select-wrapper row">
+            <div class="selection">
+              <span class="value" aria-live="polite">No Option Selected</span>
+              <span class="dropdown icon-arrow-down"></span>
+            </div>
+            <select id="issue" name="select" aria-required="true" required>
+              <option value="fridge">Refrigerator</option>
+              <option value="ac">Air-Conditioning Unit</option>
+              <option value="tv">TV</option>
+              <option value="oven">Oven</option>
+              <option value="washingmachine">Washing Machine</option>
+            </select>
+          </div>
         </fieldset>
         <div class="input-wrapper">
           <label class="form-label" for="location">Where should we pick up the item? Enter the address:</label>
-          <input id="location" name="location" type="text" placeholder="123 Pleasant Street, Boston MA 12345">
+          <input id="location" name="location" type="text" placeholder="123 Pleasant Street, Boston MA 12345" aria-required="true" required>
         </div>
 
         <div class="map">
@@ -95,6 +103,7 @@
             <input id="tel" name="tel" type="tel" placeholder="617 555 1234">
           </div>
         </fieldset>
+        <input type="button" value="cancel">
         <input type="submit" value="send request">
       </form>
     </div>

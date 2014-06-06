@@ -6,7 +6,7 @@
 <!--[if gt IE 9]><!--> <html lang="en"><!--<![endif]-->
 
 <head>
-<link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:300italic,400,700,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:300,300italic,400,700,600' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
@@ -18,7 +18,7 @@
 </head>
 <body>
   <a id="top"></a>
-  
+
   <section class="main-content">
     <header class="content-header short">
       <div class="top-header">
@@ -58,29 +58,37 @@
         <p>Text and instructions about making a payment. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <fieldset class="input-wrapper row">
           <legend class="form-label">I am reporting an issue on the following:</legend>
-          <select id="issue" name="select" aria-required="true" required>
-            <option value="trafficlight">Damaged Traffic Light</option>
-            <option value="trash">Missed Trash/Recyling Pickup</option>
-            <option value="dumping">Illegal Dumping</option>
-            <option value="streetlamp">Broken Streetlamp</option>
-            <option value="pothole">Pothole</option>
-            <option value="sidewalk">Cracked Sidewalk</option>
-            <option value="building">Building Structure Issue</option>
-            <option value="utilities">Inadequate Utilities</option>
-            <option value="graffiti">Graffiti</option>
-          </select>
+          <label for="select" class="form-label hidden" aria-required="true" required>Select Issue</label>
+          <div class="select-wrapper row">
+            <div class="selection">
+              <span class="value" aria-live="polite">No Option Selected</span>
+              <span class="dropdown icon-arrow-down"></span>
+            </div>
+            <select id="issue" name="select" aria-required="true" required>
+              <option value="" disabled>No Option Selected</option>
+              <option value="trafficlight">Damaged Traffic Light</option>
+              <option value="trash">Missed Trash/Recyling Pickup</option>
+              <option value="dumping">Illegal Dumping</option>
+              <option value="streetlamp">Broken Streetlamp</option>
+              <option value="pothole">Pothole</option>
+              <option value="sidewalk">Cracked Sidewalk</option>
+              <option value="building">Building Structure Issue</option>
+              <option value="utilities">Inadequate Utilities</option>
+              <option value="graffiti">Graffiti</option>
+            </select>
+          </div>
         </fieldset>
         <div class="input-wrapper">
           <label class="form-label" for="location">Where is it? Enter the address:</label>
-          <input id="location" name="location" type="text" placeholder="123 Pleasant Street, Boston MA 12345">
+          <input id="location" name="location" type="text" placeholder="123 Pleasant Street, Boston MA 12345" aria-required="true" required>
         </div>
 
         <div class="map">
-          <p class="form-label">Currently reported issues in this area:</p>
+          <p><em>Currently reported issues in this area:</em></p>
           <iframe width="100%" height="300px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=11&center=42.3584%2C-71.0598&key=AIzaSyBgDJ_K63agmJM0j30uis8ldC9m2CxGpO8"></iframe>
         </div>
         
-        <p><em>Don't see your issue already reported?</em></p>
+        <p>Don't see your issue already reported?</p>
         <button class="show-report" type="button">Create a new report</button>
         <fieldset class="report hidden">
           <legend class="hidden">Report Details</legend>
@@ -89,8 +97,17 @@
             <textarea id="report-details" name="textarea" class="textarea" rows="5" cols="50"></textarea>
           </div>
           <div class="input-wrapper">
-            <label class="form-label upload" for="image">Upload a photo of the issue if you have one:</label>
-            <input id="image" name="image" type="file" accept="image/*">
+
+            
+            <label class="form-label upload" for="image">Please upload a photo of the issue if you have one:</label>
+            <input id="uploadFile" disabled="disabled" />
+            <div class="fileUpload btn btn-primary">
+                <span>Browse</span>
+                <input id="uploadBtn" type="file" class="upload" />
+            </div>
+            <div class="preview-wrapper">
+              <img class="hidden" id="preview" src="#" alt="uploaded image" />
+            </div>
           </div>
     
           <fieldset class="radios">
@@ -130,6 +147,7 @@
               <input id="tel" name="tel" type="tel" placeholder="617 555 1234">
             </div>
           </fieldset>
+          <input type="button" value="cancel">
           <input type="submit" value="submit request">
         </fieldset>
       </form>
