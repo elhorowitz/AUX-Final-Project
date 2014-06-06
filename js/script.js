@@ -29,7 +29,7 @@
     e.preventDefault();
     var url = $(this).val()[0].split(" ")[0] + ".html";
     var anchor = "#" + $(this).val()[0].split(" ")[1];
-    window.location.replace(url + "/" + anchor);
+    window.location.replace(url + "?hash=" + anchor);
   });
 
 
