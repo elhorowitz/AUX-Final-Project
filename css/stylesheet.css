@@ -26,9 +26,6 @@ header {
   padding: 0;
 }
 
-img {
-}
-
 figure {
   margin: 0;
   padding: 0;
@@ -438,12 +435,13 @@ li {
 .services-info figcaption {
   height: 60px;
   overflow: hidden;
-  padding: 0 5px;
+  padding: 10px;
   width: 100%;
 }
 
 .services-info p { 
   font-size: 14px;
+  margin: 0;
 }
 
 .services-info h3 { 
@@ -460,13 +458,66 @@ li {
 
 
 /*---- Social Media ----*/
+.download-app {
+  text-align: center;
+}
+
+.download-app h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.download-app .section-wrapper {
+  border-bottom: 2px solid #CAD1D3;
+  border-top: 2px solid #CAD1D3;
+  padding: 10px 0 30px;
+}
+
+.media-wrapper {
+  border: 2px solid #A6AAA9;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  color: #838588;
+  font-size: 24px;
+  float: left;
+  height: 80px;
+  margin: 0 5%;
+  padding: 5px 0;
+}
+
+.media-wrapper:hover {
+  background: #F0F9FE;
+  border-bottom: 2px solid #A6AAA9;
+}
+
+.media-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.media-wrapper p {
+  display: inline-block;
+  line-height: 70px;
+  margin: 0;
+  padding-left: 5px;
+  vertical-align: top;
+}
+
 .social-media {
-  background: yellowgreen;
-  min-height: 150px;
+  background: #F0F9FE;
+  text-align: center; 
+}
+
+.tweet-wrapper {
+  display: block;
+  margin: auto;
+  position: relative;
+  text-align: left; 
 }
 
 
-
+/*---------- Footer Stylings ----------*/
 .footer p {
   margin-top: 0;
 }
