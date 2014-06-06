@@ -1191,7 +1191,7 @@ fieldset.input-wrapper input[type="submit"] {
   .main-nav.hp {
     width: auto;
     position: absolute;
-    right: 0;
+    right: 20px;
   }
 
   .short .form-wrapper {
