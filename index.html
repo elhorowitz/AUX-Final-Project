@@ -11,7 +11,8 @@
   
   <title>Welcome to Citizen's Connect</title>
   
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/vender/normalize.css">
+  <link rel="stylesheet" href="css/vender/chosen.css">
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
@@ -29,10 +30,26 @@
         <div class="header-wrapper">
           <h1>Welcome to Citizen's Connect</h1>
           <h3>The best place to find city services and information.</h3>
-          <form class="form">
-            <label for="search_site">I am looking for: </label>
-            <input id="search_site" name="searchterm" type="search">
-          </form>
+          <div class="form-wrapper">
+            <form class="form" action="" method="get">
+              <label for="search_site">I am looking for: </label>
+              <select class="search_box" id="search" multiple name="searchfield" data-placeholder="ie. Parking Ticket">
+                <option value="transportation-streets-parking Cars"><a href="">Car Services</a></option>
+                <option value="transportation-streets-parking Bikes">Bicycle Services</option>
+                <option value="transportation-streets-parking Public">Public Transportation</option>
+                <option value="transportation-streets-parking Boats">Boat Services</option>
+                <option value="transportation-streets-parking Pedestrians">Pedestrian Services</option>
+                <option value="transportation-streets-parking Maintanence">Street Maintanence</option>
+                <option value="transportation-streets-parking Snow">Snow Services</option>
+                <option value="transportation-streets-parking Parking">Parking Services</option>
+                <option value="garbage-recycling-graffiti garbage">Trash Services</option>
+                <option value="garbage-recycling-graffiti yard-waste">Yard Waste Pick-up</option>
+                <option value="garbage-recycling-graffiti recycling">Recycling Services</option>
+                <option value="garbage-recycling-graffiti graffiti">Report Graffiti</option>
+              </select>
+              <input class="hidden" type="submit"/>
+            </form>
+          </div>
         </div>
       </div>
     </header>
@@ -326,10 +343,40 @@
     </div>
   </section>
   <footer class="footer">
-    <a href="http://www.cityofboston.gov/">Go to the City of Boston Main Page</a>
-    <p>Mayor's 24 Hour Hotline: 617.555.555</p>
+    <div class="up-wrapper">
+      <a href="">
+        <span class="icon-arrow-up"></span>
+        Top
+      </a>
+    </div>
+    <div class="section-wrapper">
+      <a href="http://www.cityofboston.gov/" class="cityofboston">CITY OF BOSTON’S MAIN WEBPAGE</a>
+      <div class="footer-section">
+        <p class="label">MAYOR'S 24 HOUR CONSTITUENT SERVICES LINE: 617-635-4500</p>
+      </div>
+      <div class="footer-section">
+        <p class="label">Boston City Hall</p>
+        <p>One City Hall Square</p>
+        <p>Boston, Ma 02201</p>
+        <p>Monday - Friday: 8:30 Am To 5:00 PM</p>
+      </div>
+      <div class="footer-section">
+        <p><em>Check With Individual Departments For Their Hours Of Operation. Hours May Vary By Department.</em></p>
+        <p class="label"><a href="">COMPLETE LIST OF CITY DEPARTMENTS</a></p>
+      </div>
+      <div class="footer-section">
+        <p><em>Boston City Hall Is Closed On City Holidays.</em></p>
+        <p class="label"><a href="">COMPLETE LIST OF CITY HOLIDAYS</a></p>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="section-wrapper">
+        <p>© 2014 City of Boston. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/vender/chosen.jquery.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

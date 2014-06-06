@@ -2,6 +2,23 @@
   'use strict';
 
   //====================================
+  //Function for page search
+  $(".search_box").chosen({
+    no_results_text: "Sorry, no matches. Please try again!",
+    data_placeholder: "ie. Parking Ticket",
+    search_contains: true
+  });
+
+  $('.search_box').on('change', function(e) {
+    e.preventDefault();
+    var url = $(this).val()[0].split(" ")[0] + ".html";
+    var anchor = "#" + $(this).val()[0].split(" ")[1];
+    window.location.replace(url + "/" + anchor);
+  });
+
+
+
+  //====================================
   //Function to switch between tabs
   var toggleTab = function (el) {
     var thisTab = "#" + el.attr("id");

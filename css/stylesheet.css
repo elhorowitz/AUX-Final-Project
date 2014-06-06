@@ -90,6 +90,37 @@ li {
 
 
 
+/*---------- Icons ----------*/
+@font-face {
+  font-family: 'icomoon';
+  src:url('/fonts/icomoon.eot?-7ue3mz');
+  src:url('/fonts/icomoon.eot?#iefix-7ue3mz') format('embedded-opentype'),
+    url('/fonts/icomoon.woff?-7ue3mz') format('woff'),
+    url('/fonts/icomoon.ttf?-7ue3mz') format('truetype'),
+    url('/fonts/icomoon.svg?-7ue3mz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-up:before {
+  content: "\e600";
+}
+
+
+
 
 /*---------- Grid/Layout ----------*/
 .row:before,
@@ -249,6 +280,17 @@ li {
   position: relative;
 }
 
+.header-wrapper label {
+  display: inline-block;
+}
+
+.header-wrapper select,
+.header-wrapper input[type="text"] {
+  width: 200px !important;
+  height: 30px;
+
+}
+
 .content-header {
   background: #F0F9FE;
   height: 100%;
@@ -268,7 +310,7 @@ li {
   padding-right: 10px;
 }
 
-.content-header .form input {
+.content-header .search-field input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -518,8 +560,86 @@ li {
 
 
 /*---------- Footer Stylings ----------*/
-.footer p {
+.footer {
+  background: #00377A;
+  border-top: 7px solid #FDA800;
+  color: #fff;
+  padding: 20px 0 0;
+}
+
+.up-wrapper {
+  background: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #525860;
+  cursor: pointer;
+  display: block;
+  height: 60px;
+  margin: -50px auto 0;
+  padding:5px 0;
+  position: relative; 
+  text-align: center;
+  width: 60px;
+}
+
+.icon-arrow-up {
+  display: block;
+  margin: 5px 0;
+}
+
+.up-wrapper a {
+  border-bottom: none !important;
+  color: #525860 !important;
+  display: block;
+}
+
+.up-wrapper:hover {
+  background: #FDA800; 
+}
+
+.up-wrapper:hover,
+.up-wrapper:hover a {
+  color: #fff !important;
+}
+
+.footer .section-wrapper { 
   margin-top: 0;
+  padding: 40px 0 10px; 
+}
+
+.footer a {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  border-bottom-color: #279EDE;
+  color: #279EDE;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.cityofboston { float: right; }
+
+.label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bottom-footer .section-wrapper{
+  border-top: 1px solid #41648C;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0;
 }
 
 /*---------- Tracking Page Stylings ----------*/
