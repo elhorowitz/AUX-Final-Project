@@ -105,11 +105,11 @@ li {
 /*---------- Icons ----------*/
 @font-face {
   font-family: 'icomoon';
-  src:url('/fonts/icomoon.eot?-l8cihb');
-  src:url('/fonts/icomoon.eot?#iefix-l8cihb') format('embedded-opentype'),
-    url('/fonts/icomoon.woff?-l8cihb') format('woff'),
-    url('/fonts/icomoon.ttf?-l8cihb') format('truetype'),
-    url('/fonts/icomoon.svg?-l8cihb#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot?-l8cihb');
+  src:url('../fonts/icomoon.eot?#iefix-l8cihb') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-l8cihb') format('woff'),
+    url('../fonts/icomoon.ttf?-l8cihb') format('truetype'),
+    url('../fonts/icomoon.svg?-l8cihb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -425,7 +425,7 @@ input#uploadFile {
 }
 
 .home {
-  background: url('/images/Boston-skyline.jpg') no-repeat center center; 
+  background: url('../images/Boston-skyline.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
